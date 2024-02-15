@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const userSchema = new mongoose.Schema(
+const conversationSchema = new mongoose.Schema(
   {
     participants: [
       {
@@ -19,5 +19,5 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-const Chat = mongoose.model("Chat", userSchema);
+const Chat = mongoose.model("Chat", conversationSchema);
 export default Chat;
