@@ -1,5 +1,5 @@
-import generateToken from "../helper/createToken";
-import User from "../model/user.mode";
+import generateToken from "../helper/createToken.js";
+import User from "../model/user.model.js";
 import bcryptjs from "bcryptjs";
 export const signUp = async (req, res) => {
   //   console.log("signup");
