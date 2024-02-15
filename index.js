@@ -1,7 +1,10 @@
+// import package
 import express from "express";
 import dotenv from "dotenv";
+// import files
 import authRoutes from "./routes/auth.routes.js";
 import connectToDb from "./db/databaseConnection.js";
+// middleWare
 dotenv.config();
 const app = express();
 const port = process.env.port || 5000;
